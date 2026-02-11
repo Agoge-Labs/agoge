@@ -89,7 +89,7 @@ After deploying, paste the contract addresses into `.env.local`.
 NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=  # WalletConnect Cloud
 NEXT_PUBLIC_INTENT_ROUTER_ADDRESS=     # After Remix deployment
 NEXT_PUBLIC_AGENT_REGISTRY_ADDRESS=    # After Remix deployment
-NEXT_PUBLIC_REPUTATION_MANAGER_ADDRESS=# After Remix deployment
+NEXT_PUBLIC_REPUTATION_MANAGER_ADDRESS= # After Remix deployment
 NEXT_PUBLIC_PRICE_ORACLE_ADDRESS=      # After Remix deployment
 NEXT_PUBLIC_MOCK_USDC_ADDRESS=         # After Remix deployment
 COINGECKO_API_KEY=                     # CoinGecko demo key
