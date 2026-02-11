@@ -248,7 +248,7 @@ export default function DiscoverPage() {
                                         <div style={{ fontSize: 24, fontWeight: 800 }}>
                                             {asset.current_price ? formatCurrency(asset.current_price) : "N/A"}
                                         </div>
-                                        {asset.price_change_percentage_24h !== undefined && (
+                                        {asset.price_change_percentage_24h != null && (
                                             <div style={{
                                                 display: "flex",
                                                 alignItems: "center",
