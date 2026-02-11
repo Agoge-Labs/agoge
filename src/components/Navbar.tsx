@@ -46,13 +46,10 @@ export function Navbar() {
                     <img
                         src="/logo.png"
                         alt="Agoge"
-                        width={36}
-                        height={36}
+                        width={56}
+                        height={56}
                         style={{ borderRadius: 8 }}
                     />
-                    <span style={{ fontSize: 22, fontWeight: 700, color: "var(--text-primary)", letterSpacing: "-0.02em" }}>
-                        Agoge
-                    </span>
                 </Link>
 
                 {/* Desktop Nav */}

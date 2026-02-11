@@ -164,8 +164,19 @@ export default function LandingPage() {
             ].map((stat, i) => {
               const Icon = stat.icon;
               return (
-                <div key={stat.label}>
-                  <Icon size={20} style={{ color: "var(--accent-blue)", marginBottom: 8 }} />
+                <div key={stat.label} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                  <div style={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: 10,
+                    background: "rgba(59, 130, 246, 0.1)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: 12,
+                  }}>
+                    <Icon size={20} style={{ color: "var(--accent-blue)" }} />
+                  </div>
                   <div style={{ fontSize: 28, fontWeight: 800, letterSpacing: "-0.02em" }}>{stat.value}</div>
                   <div style={{ fontSize: 12, color: "var(--text-muted)", marginTop: 4, textTransform: "uppercase", letterSpacing: "0.05em" }}>
                     {stat.label}
