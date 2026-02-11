@@ -64,6 +64,16 @@ See [contracts/REMIX_DEPLOYMENT_GUIDE.md](contracts/REMIX_DEPLOYMENT_GUIDE.md) f
 
 After deploying, paste the contract addresses into `.env.local`.
 
+## Deployed Contracts (Base Sepolia)
+
+| Contract | Address |
+|---|---|
+| **IntentRouter** | [`0xDDF47eEB4e5FF4AA60e063E0Ec4f7C35B47Ed445`](https://sepolia.basescan.org/address/0xDDF47eEB4e5FF4AA60e063E0Ec4f7C35B47Ed445) |
+| **AgentRegistry** | [`0x7BB426F7d79A3ac0B014fdABA7123cFac4Fd7B9e`](https://sepolia.basescan.org/address/0x7BB426F7d79A3ac0B014fdABA7123cFac4Fd7B9e) |
+| **ReputationManager** | [`0xd61E1107577F866bc67703FaaaA0E8e7b90eFE51`](https://sepolia.basescan.org/address/0xd61E1107577F866bc67703FaaaA0E8e7b90eFE51) |
+| **PriceOracle** | [`0xE4D8f519967AB7Ca299C6549e37cc5Ae5352c1f8`](https://sepolia.basescan.org/address/0xE4D8f519967AB7Ca299C6549e37cc5Ae5352c1f8) |
+| **MockUSDC** | [`0x79D4356aDAd3c69c8DE94121477C1B53bbE396f9`](https://sepolia.basescan.org/address/0x79D4356aDAd3c69c8DE94121477C1B53bbE396f9) |
+
 ## Tech Stack
 
 | Layer | Technology |
