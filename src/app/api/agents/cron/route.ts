@@ -1,6 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createPublicClient, http, formatUnits } from "viem";
-import { baseSepolia } from "viem/chains";
+import { createPublicClient, http, formatUnits, defineChain } from "viem";
+
+const mantleSepolia = defineChain({
+    id: 5003,
+    name: "Mantle Sepolia",
+    nativeCurrency: { name: "MNT", symbol: "MNT", decimals: 18 },
+    rpcUrls: {
+        default: { http: ["https://rpc.sepolia.mantle.xyz"] },
+    },
+    blockExplorers: {
+        default: { name: "Mantle Sepolia Explorer", url: "https://sepolia.mantlescan.xyz" },
+    },
+    testnet: true,
+});
 
 // ── Contract config (inlined - cannot import web3.ts, it has client-only RainbowKit) ──
 
@@ -134,8 +146,8 @@ const contractsDeployed =
 // ── Viem public client (read-only, no wallet needed) ────────────────
 
 const publicClient = createPublicClient({
-    chain: baseSepolia,
-    transport: http("https://sepolia.base.org"),
+    chain: mantleSepolia,
+    transport: http("https://rpc.sepolia.mantle.xyz"),
 });
 
 // ── Simulated agent proposal generator ──────────────────────────────

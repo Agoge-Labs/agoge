@@ -31,7 +31,7 @@ import {
 const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000" as const;
 
 const CHAINS = [
-    { id: 84532, name: "Base Sepolia", color: "#0052FF" },
+    { id: 5003, name: "Mantle Sepolia", color: "#000000" },
     { id: 421614, name: "Arbitrum Sepolia", color: "#12AAFF" },
     { id: 11155111, name: "Ethereum Sepolia", color: "#627EEA" },
 ];
@@ -501,12 +501,12 @@ function IntentFormContent() {
                         </div>
                         {approveHash && (
                             <a
-                                href={`https://sepolia.basescan.org/tx/${approveHash}`}
+                                href={`https://sepolia.mantlescan.xyz/tx/${approveHash}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ marginLeft: "auto", color: "var(--accent-blue)", fontSize: 12, display: "flex", alignItems: "center", gap: 4 }}
                             >
-                                <ExternalLink size={12} /> Basescan
+                                <ExternalLink size={12} /> Mantlescan
                             </a>
                         )}
                     </div>
@@ -534,7 +534,7 @@ function IntentFormContent() {
                             <div style={{ fontSize: 14, fontWeight: 600 }}>Submit Intent</div>
                             <div style={{ fontSize: 12, color: "var(--text-muted)" }}>
                                 {txPhase === "submitting" && !isSubmitConfirmed
-                                    ? "Broadcasting to Base Sepolia..."
+                                    ? "Broadcasting to Mantle Sepolia..."
                                     : txPhase === "confirmed"
                                         ? "Intent recorded on-chain"
                                         : "Waiting for approval"}
@@ -542,12 +542,12 @@ function IntentFormContent() {
                         </div>
                         {submitHash && (
                             <a
-                                href={`https://sepolia.basescan.org/tx/${submitHash}`}
+                                href={`https://sepolia.mantlescan.xyz/tx/${submitHash}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ marginLeft: "auto", color: "var(--accent-blue)", fontSize: 12, display: "flex", alignItems: "center", gap: 4 }}
                             >
-                                <ExternalLink size={12} /> Basescan
+                                <ExternalLink size={12} /> Mantlescan
                             </a>
                         )}
                     </div>
@@ -589,7 +589,7 @@ function IntentFormContent() {
                             <Check size={14} style={{ color: "var(--accent-green)" }} />
                             <span style={{ color: "var(--accent-green)", fontWeight: 600 }}>On-chain intent confirmed</span>
                             <a
-                                href={`https://sepolia.basescan.org/tx/${onChainIntentId}`}
+                                href={`https://sepolia.mantlescan.xyz/tx/${onChainIntentId}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ marginLeft: "auto", color: "var(--accent-blue)", display: "flex", alignItems: "center", gap: 4 }}
@@ -735,7 +735,7 @@ function IntentFormContent() {
 
                     {onChainIntentId && (
                         <a
-                            href={`https://sepolia.basescan.org/tx/${onChainIntentId}`}
+                            href={`https://sepolia.mantlescan.xyz/tx/${onChainIntentId}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
@@ -743,7 +743,7 @@ function IntentFormContent() {
                                 color: "var(--accent-blue)", fontSize: 13, marginBottom: 20,
                             }}
                         >
-                            <ExternalLink size={14} /> View on Basescan
+                            <ExternalLink size={14} /> View on Mantlescan
                         </a>
                     )}
 

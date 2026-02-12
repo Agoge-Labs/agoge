@@ -1,13 +1,26 @@
 import { http, createConfig } from "wagmi";
-import { baseSepolia } from "wagmi/chains";
+import { defineChain } from "viem";
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
+
+export const mantleSepolia = defineChain({
+    id: 5003,
+    name: "Mantle Sepolia",
+    nativeCurrency: { name: "MNT", symbol: "MNT", decimals: 18 },
+    rpcUrls: {
+        default: { http: ["https://rpc.sepolia.mantle.xyz"] },
+    },
+    blockExplorers: {
+        default: { name: "Mantle Sepolia Explorer", url: "https://sepolia.mantlescan.xyz" },
+    },
+    testnet: true,
+});
 
 export const config = getDefaultConfig({
     appName: "Agoge",
     projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || "demo-project-id",
-    chains: [baseSepolia],
+    chains: [mantleSepolia],
     transports: {
-        [baseSepolia.id]: http("https://sepolia.base.org"),
+        [mantleSepolia.id]: http("https://rpc.sepolia.mantle.xyz"),
     },
     ssr: true,
 });

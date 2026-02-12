@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 /**
  * @title MockUSDC
- * @notice A mock ERC-20 token for testing on Base Sepolia.
+ * @notice A mock ERC-20 token for testing on Mantle Sepolia.
  *         Anyone can mint tokens for demo purposes.
  */
 contract MockUSDC {

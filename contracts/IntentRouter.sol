@@ -11,7 +11,7 @@ import "./ReputationManager.sol";
  *         compete to fulfill them. The best proposal is selected, the agent
  *         executes the trade, and reputation is updated accordingly.
  *
- * @dev    Designed for deployment on Base Sepolia via Remix IDE.
+ * @dev    Designed for deployment on Mantle Sepolia via Remix IDE.
  *         Uses EIP-1153 transient storage for gas-optimized reentrancy guard.
  */
 contract IntentRouter {

@@ -58,21 +58,21 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Smart Contract Deployment
 
-Contracts are designed for deployment via **Remix IDE** on **Base Sepolia** testnet.
+Contracts are designed for deployment via **Remix IDE** on **Mantle Sepolia** testnet.
 
 See [contracts/REMIX_DEPLOYMENT_GUIDE.md](contracts/REMIX_DEPLOYMENT_GUIDE.md) for step-by-step instructions.
 
 After deploying, paste the contract addresses into `.env.local`.
 
-## Deployed Contracts (Base Sepolia)
+## Deployed Contracts (Mantle Sepolia)
 
 | Contract | Address |
 |---|---|
-| **IntentRouter** | [`0xDDF47eEB4e5FF4AA60e063E0Ec4f7C35B47Ed445`](https://sepolia.basescan.org/address/0xDDF47eEB4e5FF4AA60e063E0Ec4f7C35B47Ed445) |
-| **AgentRegistry** | [`0x7BB426F7d79A3ac0B014fdABA7123cFac4Fd7B9e`](https://sepolia.basescan.org/address/0x7BB426F7d79A3ac0B014fdABA7123cFac4Fd7B9e) |
-| **ReputationManager** | [`0xd61E1107577F866bc67703FaaaA0E8e7b90eFE51`](https://sepolia.basescan.org/address/0xd61E1107577F866bc67703FaaaA0E8e7b90eFE51) |
-| **PriceOracle** | [`0xE4D8f519967AB7Ca299C6549e37cc5Ae5352c1f8`](https://sepolia.basescan.org/address/0xE4D8f519967AB7Ca299C6549e37cc5Ae5352c1f8) |
-| **MockUSDC** | [`0x79D4356aDAd3c69c8DE94121477C1B53bbE396f9`](https://sepolia.basescan.org/address/0x79D4356aDAd3c69c8DE94121477C1B53bbE396f9) |
+| **IntentRouter** | [`0xe0D1c854651b9Ba015625542630B7332B8557D71`](https://sepolia.mantlescan.xyz/address/0xe0D1c854651b9Ba015625542630B7332B8557D71) |
+| **AgentRegistry** | [`0x5421832836aA75556fA5a66c0Ac77e6f7FFeD3d4`](https://sepolia.mantlescan.xyz/address/0x5421832836aA75556fA5a66c0Ac77e6f7FFeD3d4) |
+| **ReputationManager** | [`0xa655F2631b55896e10Ecd26934584124b4ba8493`](https://sepolia.mantlescan.xyz/address/0xa655F2631b55896e10Ecd26934584124b4ba8493) |
+| **PriceOracle** | [`0x9D3f8B9C605347bD519660523275ef618c7D1E09`](https://sepolia.mantlescan.xyz/address/0x9D3f8B9C605347bD519660523275ef618c7D1E09) |
+| **MockUSDC** | [`0x68F446aFC78819d6F4486aB82257cdfF057F65aC`](https://sepolia.mantlescan.xyz/address/0x68F446aFC78819d6F4486aB82257cdfF057F65aC) |
 
 ## Tech Stack
 
@@ -83,7 +83,7 @@ After deploying, paste the contract addresses into `.env.local`.
 | State | Zustand |
 | Data | CoinGecko API (cached) |
 | Contracts | Solidity 0.8.20, ERC-7683, EIP-1153 |
-| Chain | Base Sepolia (84532) |
+| Chain | Mantle Sepolia (5003) |
 
 ## Key Features
 
